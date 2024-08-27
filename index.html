@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+        <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="stylesheet" href="styles.css">
+                <script src="script.js"></script>
+                <title>BMI Calculater</title>
+            </head>
+            <body>
+                <div class="container">
+                    <h1>BMi  calculator</h1>
+                    <div class="calculator">
+                        <input type = 'number' id="height" place ="Height (cm)">
+                        <input type = 'number' id="weight" place ="Weight (kg)">
+                        <button onclick="calculateBMI()">Calculate</button>
+                    </div>
+                    <div class="'result">
+                        <h2>
+                            Your BMI: <span id="bmi-result">0</span>
+                        </h2>
+                        <p id ="bmi-category"></p>
+                    </div>
+                    <div class="facts">
+                        <h2>Did You Know?</h2>
+                        <ul>
+                            <li>BMI = weight(kg) / height(m)^2</li>
+                            <li>A BMI between 18.5 and 24.9 is considered healthy.</li>
+                            <li>A BMI over 30 is classified as obese.</li>
+                            <li>BMI may not account for muscle mass.</li>
+                            <li>It's an easy way to assess health risks.</li>
+                        </ul>
+                    </div>
+                </div>
+            </body>
+        </html>
